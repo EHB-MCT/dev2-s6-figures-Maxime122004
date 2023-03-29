@@ -45,7 +45,13 @@ const form = {
             const rect = new Rectangle('Rectangle', width, height);
             console.log(rect);
             console.log(rect.htmlString);
-            document.getElementById("result").insertAdjacentHTML('beforeend', rect);
+            document.getElementById("results").insertAdjacentHTML('beforeend', rect.htmlString);
+        } else if(type === 'circle'){
+            const radius = document.getElementById('radius').value;
+            const circ = new Circle('Circle', radius);
+            console.log(circ);
+            console.log(circ.htmlString);
+            document.getElementById("results").insertAdjacentHTML('beforeend', circ.htmlString);
         }
 
     }

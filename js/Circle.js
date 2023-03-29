@@ -18,21 +18,21 @@ export default class Circle extends Figure{
     }
     get htmlString(){
         return `<div class="result">
-        <div class="figure circle" style="width: DIAMETERpx; height: DIAMETERpx;"></div>
+        <div class="figure circle" style="width: ${this.diameter}px; height: ${this.diameter}px;"></div>
         <div class="infoBox">
           <h3>Circle</h3>
           <dl>
             <dt>Radius</dt>
-            <dd>RADIUS px</dd>
+            <dd>${this.radius} px</dd>
       
             <dt>Diameter</dt>
-            <dd>DIAMETER px</dd>
+            <dd>${this.diameter} px</dd>
       
             <dt>Area</dt>
-            <dd>AREA px</dd>
+            <dd>${this.area} px</dd>
       
             <dt>Circumference</dt>
-            <dd>CIRCUMFERENCE px</dd>
+            <dd>${this.circumference} px</dd>
           </dl>
         </div>
       </div>`;
