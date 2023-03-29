@@ -52,6 +52,12 @@ const form = {
             console.log(circ);
             console.log(circ.htmlString);
             document.getElementById("results").insertAdjacentHTML('beforeend', circ.htmlString);
+        } else if(type === 'square'){
+            const size = document.getElementById('size').value;
+            const squa = new Square('Square', size);
+            console.log(squa);
+            console.log(squa.htmlString);
+            document.getElementById("results").insertAdjacentHTML('beforeend', squa.htmlString);
         }
 
     }
